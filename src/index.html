@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord_Replique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="titlebar">
+            <div class="drag-region"></div>
+            <div class="window-controls">
+                <button onclick="window.windowControls.minimize()">—</button>
+                <button onclick="window.windowControls.maximize()">☐</button>
+                <button onclick="window.windowControls.close()">✕</button>
+            </div>
+        </div>
+
+        <div class="layout">
+            <div class="sidebar">
+                <div class="servers">
+                    <!-- Les serveurs sont dans le js -->
+                </div>
+            </div>
+
+            <div class="channels">
+                <div class="channel-list">
+                    <!-- Les salons sont dans le js -->
+                </div>
+                <div class="channel-user">
+                    <div class="user-avatar">Y</div>
+                    <div class="user-info">
+                        <div class="user-name">You</div>
+                        <div class="user-status">Online</div>
+                    </div>
+                    <button class="user-action">⚙</button>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-header">
+                    <!-- Les messages sont dans js -->
+                </div>
+                <div class="messages">
+                    <!-- Les messages sont dans js -->
+                </div>
+                <div class="message-input">
+                    <input type="text" id="messageInput" placeholder="Type a message...">
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
